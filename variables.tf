@@ -30,10 +30,13 @@ variable "asg_name" {}
 
 /* We use this to populate the following ASG settings
  * - max_size
- * - desired_capacity
  */
 variable "asg_number_of_instances" {
   description = "The number of instances we want in the ASG"
+}
+
+variable "asg_desired_capacity" {
+  description = "Desired number of instances we want in the ASG"
 }
 
 /*
